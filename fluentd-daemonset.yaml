@@ -13,6 +13,8 @@ spec:
       labels:
         app: fluentd
     spec:
+      nodeSelector:
+        nodetype: test
       containers:
       - name: fluentd
         image: fluent/fluentd:v1.17.0-1.0
